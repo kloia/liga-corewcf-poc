@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>LigaCoreWCFPoC</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\StandardClient\StandardClient.csproj" />
+        <ProjectReference Include="..\StandardCommon\StandardCommon.csproj" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="System.ServiceModel.Http" Version="4.8.1" />
+        <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.1" />
+        <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />
+    </ItemGroup>
+
+</Project>
